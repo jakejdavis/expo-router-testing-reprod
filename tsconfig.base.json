@@ -1,0 +1,33 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "strict": true,
+        "target": "ES2022",
+        "module": "ES2022",
+        "lib": ["ES2022", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "rootDir": ".",
+        "baseUrl": ".",
+        "paths": {
+            "apps/expo/*": ["./apps/expo/src/*"],
+            "assets/*": ["./packages/ui/assets/*"],
+            "packages/api": ["./packages/api/src/index.ts"],
+            "packages/app/*": ["./packages/app/src/*"],
+            "packages/ui": ["./packages/ui/src/index.ts"]
+        },
+        "plugins": [
+            {
+                "name": "@nderscore/tamagui-typescript-plugin",
+                "pathToApp": "apps/next"
+            }
+        ]
+    },
+    "exclude": ["node_modules", "tmp"]
+}

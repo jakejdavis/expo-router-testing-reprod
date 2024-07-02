@@ -1,0 +1,51 @@
+{
+    "expo": {
+        "name": "ByTheWay",
+        "slug": "bytheway",
+        "scheme": "bytheway",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "automatic",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "uk.bytheway.app"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#FFFFFF"
+            },
+            "package": "uk.bytheway.app"
+        },
+        "plugins": [
+            "expo-font",
+            "expo-router",
+            "expo-asset",
+            "expo-dev-client",
+            [
+                "expo-dev-launcher",
+                {
+                    "launchMode": "most-recent"
+                }
+            ]
+        ],
+        "extra": {
+            "router": {
+                "origin": false
+            },
+            "eas": {
+                "projectId": "1f75c54e-0dc3-49dc-9df2-1c30a9fddb61"
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.5.3/schema.json",
+    "vcs": {
+        "clientKind": "git",
+        "defaultBranch": "main",
+        "enabled": true,
+        "useIgnoreFile": true
+    },
+    "organizeImports": {
+        "enabled": true
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "suspicious": {
+                "noExplicitAny": "warn",
+                "noArrayIndexKey": "warn"
+            }
+        }
+    },
+    "formatter": {
+        "enabled": true,
+        "formatWithErrors": false,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "lineWidth": 140,
+        "lineEnding": "lf"
+    },
+    "javascript": {
+        "formatter": {
+            "semicolons": "always"
+        }
+    },
+    "json": {
+        "parser": {
+            "allowComments": true
+        }
+    },
+    "files": {
+        "ignore": [
+            ".expo",
+            ".nx/**/*",
+            ".next",
+            ".tamagui",
+            ".yarn/*",
+            "coverage",
+            "dist",
+            "node_modules",
+            "packages/ui/types",
+            "apps/expo/android",
+            "apps/expo/ios",
+            "apps/next/__tests__",
+            "apps/expo/__tests__",
+            "apps/next/public/tamagui.css",
+            "apps/next/.million"
+        ],
+        "ignoreUnknown": true
+    }
+}
